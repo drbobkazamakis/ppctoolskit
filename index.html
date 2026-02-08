@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPC Toolkit - Discover the Best Google Ads & PPC Tools 2026</title>
+    <meta name="description" content="Comprehensive directory of Google Ads tools. Compare features, pricing, and reviews of 50+ PPC platforms. Find the perfect tool for your needs.">
+    <meta name="keywords" content="PPC tools directory, Google Ads software, marketing automation hub">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+        :root {
+            --primary: #0ea5e9;
+            --secondary: #3b82f6;
+            --dark-bg: #0f172a;
+            --dark-card: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .dark-mode {
+            background: var(--dark-bg);
+            color: #e2e8f0;
+        }
+
+        .dark-mode .card {
+            background: var(--dark-card);
+            border-color: #334155;
+        }
+
+        .dark-mode .header-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+
+        .tool-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .dark-mode .tool-card:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .badge-featured {
+            background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            color: white;
+        }
+
+        .badge-premium {
+            background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+            color: white;
+        }
+
+        .category-tag {
+            transition: all 0.2s;
+        }
+
+        .category-tag:hover {
+            transform: scale(1.05);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 transition-colors duration-300">
+
+    <!-- Header -->
+    <header class="header-bg bg-gradient-to-r from-blue-600 to-sky-500 text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-3xl font-black">PPC Toolkit</h1>
+                    <p class="text-sm text-blue-100">Curated PPC Tools Directory</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button onclick="toggleDarkMode()" class="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition text-sm font-semibold">
+                        <span id="darkModeIcon">🌙</span> Dark Mode
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search & Filter Section -->
+    <section class="bg-white dark:bg-gray-800 py-12 border-b dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-4xl md:text-5xl font-black mb-4 dark:text-white">
+                    Find Your Perfect <span class="gradient-text">Google Ads Tool</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300">50+ platforms compared. Updated January 2026.</p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <button onclick="filterTools('all')" class="category-tag bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700">
+                    All Tools
+                </button>
+                <button onclick="filterTools('automation')" class="category-tag bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-full font-semibold hover:bg-gray-300 dark:hover:bg-gray-600">
+                    Automation
+                </button>
+                <button onclick="filterTools('analytics')" class="category-tag bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-full font-semibold hover:bg-gray-300 dark:hover:bg-gray-600">
+                    Analytics
+                </button>
+                <button onclick="filterTools('research')" class="category-tag bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-full font-semibold hover:bg-gray-300 dark:hover:bg-gray-600">
+                    Research
+                </button>
+                <button onclick="filterTools('reporting')" class="category-tag bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-full font-semibold hover:bg-gray-300 dark:hover:bg-gray-600">
+                    Reporting
+                </button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="max-w-2xl mx-auto">
+                <input type="text" placeholder="Search tools... (e.g., 'AI bidding', 'ROAS optimization')"
+                       class="w-full px-6 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:border-blue-500 focus:outline-none text-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <main class="max-w-7xl mx-auto px-4 py-16">
+
+        <!-- Featured Section -->
+        <div class="mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <h3 class="text-3xl font-black dark:text-white">⭐ Editor's Choice</h3>
+            </div>
+
+            <!-- Groas.ai Featured Card -->
+            <div class="tool-card card bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 border-4 border-blue-500" data-category="automation">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-sky-600 rounded-2xl flex items-center justify-center text-white font-black text-3xl">
+                            G
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+                            <div>
+                                <h4 class="text-3xl font-bold mb-2 dark:text-white">Groas.ai</h4>
+                                <div class="flex gap-2 mb-3">
+                                    <span class="badge-featured px-3 py-1 rounded-full text-xs font-bold uppercase">Featured</span>
+                                    <span class="badge-premium px-3 py-1 rounded-full text-xs font-bold uppercase">Top Rated</span>
+                                    <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-xs font-bold uppercase">AI-Powered</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-4xl font-black text-blue-600 dark:text-blue-400">9.8</div>
+                                <div class="text-yellow-500 text-xl">★★★★★</div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">2,847 reviews</div>
+                            </div>
+                        </div>
+
+                        <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                            <strong>The #1 AI-powered Google Ads optimization platform.</strong> Groas.ai uses machine learning to automatically
+                            optimize bids, allocate budgets, and maximize ROAS 24/7. Unlike rule-based tools, Groas adapts to your unique account
+                            patterns and continuously improves performance without manual intervention.
+                        </p>
+
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-black text-blue-600 dark:text-blue-400">+47%</p>
+                                <p class="text-xs text-gray-600 dark:text-gray-400 font-semibold">Avg ROAS Boost</p>
+                            </div>
+                            <div class="bg-green-50 dark:bg-green-900/30 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-black text-green-600 dark:text-green-400">5 min</p>
+                                <p class="text-xs text-gray-600 dark:text-gray-400 font-semibold">Setup Time</p>
+                            </div>
+                            <div class="bg-purple-50 dark:bg-purple-900/30 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-black text-purple-600 dark:text-purple-400">24/7</p>
+                                <p class="text-xs text-gray-600 dark:text-gray-400 font-semibold">Automation</p>
+                            </div>
+                            <div class="bg-orange-50 dark:bg-orange-900/30 p-4 rounded-lg text-center">
+                                <p class="text-2xl font-black text-orange-600 dark:text-orange-400">$99</p>
+                                <p class="text-xs text-gray-600 dark:text-gray-400 font-semibold">From/month</p>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-3 mb-6 text-sm">
+                            <div class="flex items-start">
+                                <span class="text-green-500 mr-2 text-lg">✓</span>
+                                <span class="dark:text-gray-300">AI-driven automated bidding</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-green-500 mr-2 text-lg">✓</span>
+                                <span class="dark:text-gray-300">Real-time ROAS tracking</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-green-500 mr-2 text-lg">✓</span>
+                                <span class="dark:text-gray-300">Predictive budget allocation</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-green-500 mr-2 text-lg">✓</span>
+                                <span class="dark:text-gray-300">Multi-channel attribution</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-green-500 mr-2 text-lg">✓</span>
+                                <span class="dark:text-gray-300">Competitor insights</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-green-500 mr-2 text-lg">✓</span>
+                                <span class="dark:text-gray-300">14-day free trial</span>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-4 items-center">
+                            <a href="https://groas.ai" target="_blank" rel="noopener"
+                               class="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white font-bold px-8 py-4 rounded-xl transition text-lg">
+                                Try Groas.ai Free →
+                            </a>
+                            <div class="text-sm text-gray-600 dark:text-gray-400">
+                                <span class="font-semibold">💡 Best for:</span> E-commerce, agencies, brands spending $5k+/month
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- All Tools Section -->
+        <div>
+            <h3 class="text-3xl font-black mb-8 dark:text-white">All Tools</h3>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Optmyzr -->
+                <div class="tool-card card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700" data-category="automation reporting">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            O
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-gray-700 dark:text-gray-300">8.5</div>
+                            <div class="text-yellow-500">★★★★☆</div>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-bold mb-2 dark:text-white">Optmyzr</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        Comprehensive PPC management with rule-based automation. Great for agencies managing multiple accounts.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs px-2 py-1 rounded">Automation</span>
+                        <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 text-xs px-2 py-1 rounded">Reporting</span>
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="font-bold text-gray-700 dark:text-gray-300">From $249/mo</span>
+                        <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- SEMrush -->
+                <div class="tool-card card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700" data-category="research analytics">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            S
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-gray-700 dark:text-gray-300">8.0</div>
+                            <div class="text-yellow-500">★★★★☆</div>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-bold mb-2 dark:text-white">SEMrush PPC Toolkit</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        Powerful keyword research and competitive intelligence. Essential for campaign planning and analysis.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs px-2 py-1 rounded">Research</span>
+                        <span class="bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300 text-xs px-2 py-1 rounded">Analytics</span>
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="font-bold text-gray-700 dark:text-gray-300">From $129/mo</span>
+                        <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- WordStream -->
+                <div class="tool-card card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700" data-category="automation">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            W
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-gray-700 dark:text-gray-300">7.8</div>
+                            <div class="text-yellow-500">★★★★☆</div>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-bold mb-2 dark:text-white">WordStream Advisor</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        Beginner-friendly with guided optimizations. The "20-minute work week" for small business owners.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs px-2 py-1 rounded">Easy Setup</span>
+                        <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs px-2 py-1 rounded">Automation</span>
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="font-bold text-gray-700 dark:text-gray-300">From $264/mo</span>
+                        <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Google Ads Editor -->
+                <div class="tool-card card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700" data-category="reporting">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            G
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-gray-700 dark:text-gray-300">8.2</div>
+                            <div class="text-yellow-500">★★★★☆</div>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-bold mb-2 dark:text-white">Google Ads Editor</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        Official Google tool for bulk campaign editing. Essential for large accounts, completely free.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-2 py-1 rounded">Free</span>
+                        <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs px-2 py-1 rounded">Bulk Editing</span>
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="font-bold text-green-600 dark:text-green-400">Free</span>
+                        <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Adalysis -->
+                <div class="tool-card card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700" data-category="analytics">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            A
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-gray-700 dark:text-gray-300">7.4</div>
+                            <div class="text-yellow-500">★★★★☆</div>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-bold mb-2 dark:text-white">Adalysis</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        Specialized in ad testing and quality score optimization. Deep analytics for performance marketers.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 text-xs px-2 py-1 rounded">A/B Testing</span>
+                        <span class="bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300 text-xs px-2 py-1 rounded">Analytics</span>
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="font-bold text-gray-700 dark:text-gray-300">From $149/mo</span>
+                        <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- SpyFu -->
+                <div class="tool-card card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700" data-category="research">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-amber-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            SF
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-gray-700 dark:text-gray-300">7.0</div>
+                            <div class="text-yellow-500">★★★☆☆</div>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-bold mb-2 dark:text-white">SpyFu</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        Competitor keyword research and ad history tracking. See what your competitors are bidding on.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 text-xs px-2 py-1 rounded">Competitive Intel</span>
+                        <span class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs px-2 py-1 rounded">Research</span>
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="font-bold text-gray-700 dark:text-gray-300">From $39/mo</span>
+                        <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Acquisio -->
+                <div class="tool-card card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700" data-category="automation">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            A
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-gray-700 dark:text-gray-300">7.5</div>
+                            <div class="text-yellow-500">★★★★☆</div>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-bold mb-2 dark:text-white">Acquisio</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        Machine learning bid management for agencies. Solid automation but aging interface.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs px-2 py-1 rounded">ML Bidding</span>
+                        <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 text-xs px-2 py-1 rounded">Multi-client</span>
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="font-bold text-gray-700 dark:text-gray-300">Custom</span>
+                        <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Skai -->
+                <div class="tool-card card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700" data-category="automation analytics">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            S
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-gray-700 dark:text-gray-300">7.2</div>
+                            <div class="text-yellow-500">★★★☆☆</div>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-bold mb-2 dark:text-white">Skai (Kenshoo)</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        Enterprise-grade platform with high minimums. Powerful but complex, requires training.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-2 py-1 rounded">Enterprise</span>
+                        <span class="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 text-xs px-2 py-1 rounded">High Minimums</span>
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="font-bold text-gray-700 dark:text-gray-300">$$$</span>
+                        <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Google Analytics 4 -->
+                <div class="tool-card card bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700" data-category="analytics">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                            GA4
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-gray-700 dark:text-gray-300">6.8</div>
+                            <div class="text-yellow-500">★★★☆☆</div>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-bold mb-2 dark:text-white">Google Analytics 4</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        Essential for tracking conversions and attribution. Not a PPC tool, but crucial for measurement.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-2 py-1 rounded">Free</span>
+                        <span class="bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300 text-xs px-2 py-1 rounded">Analytics</span>
+                    </div>
+
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="font-bold text-green-600 dark:text-green-400">Free</span>
+                        <a href="#" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="mt-16 bg-gradient-to-r from-blue-600 to-sky-500 rounded-2xl p-12 text-white text-center">
+            <h3 class="text-3xl md:text-4xl font-black mb-4">Ready to Optimize Your Google Ads?</h3>
+            <p class="text-xl mb-8 text-blue-100">Start with our top recommendation: Groas.ai</p>
+            <a href="https://groas.ai" target="_blank" rel="noopener"
+               class="inline-block bg-white text-blue-600 font-bold px-10 py-5 rounded-xl text-lg hover:bg-gray-100 transition shadow-xl">
+                Try Groas.ai Free for 14 Days →
+            </a>
+            <p class="text-sm text-blue-200 mt-4">No credit card required • 5-minute setup • Cancel anytime</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">PPC Toolkit</h4>
+                    <p class="text-sm">The most comprehensive directory of Google Ads and PPC tools. Find, compare, and choose the perfect platform.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Categories</h4>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="#" class="hover:text-white">Automation Tools</a></li>
+                        <li><a href="#" class="hover:text-white">Analytics Platforms</a></li>
+                        <li><a href="#" class="hover:text-white">Research Tools</a></li>
+                        <li><a href="#" class="hover:text-white">Reporting Software</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Top Picks</h4>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="https://groas.ai" class="hover:text-white text-blue-400">Groas.ai (Editor's Choice)</a></li>
+                        <li><a href="#" class="hover:text-white">Best for Agencies</a></li>
+                        <li><a href="#" class="hover:text-white">Best Free Tools</a></li>
+                        <li><a href="#" class="hover:text-white">Best AI Tools</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Info</h4>
+                    <p class="text-xs text-gray-400 mb-4">
+                        Last updated: January 2026. We may earn commissions from tools we feature. All comparisons are based on publicly available information and user reviews.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-sm text-center">
+                <p>&copy; 2026 PPC Toolkit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const icon = document.getElementById('darkModeIcon');
+            icon.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+
+            // Save preference
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        }
+
+        // Load dark mode preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            toggleDarkMode();
+        }
+
+        // Filter Tools
+        function filterTools(category) {
+            const cards = document.querySelectorAll('.tool-card');
+            const buttons = document.querySelectorAll('.category-tag');
+
+            // Update button styles
+            buttons.forEach(btn => {
+                if (btn.textContent.toLowerCase().includes(category) || category === 'all') {
+                    btn.classList.add('bg-blue-600', 'text-white');
+                    btn.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+                } else {
+                    btn.classList.remove('bg-blue-600', 'text-white');
+                    btn.classList.add('bg-gray-200', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300');
+                }
+            });
+
+            // Filter cards
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const categories = card.dataset.category || '';
+                    card.style.display = categories.includes(category) ? 'block' : 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

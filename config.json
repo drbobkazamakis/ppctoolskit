@@ -1,0 +1,32 @@
+{
+  "template": "C - Hub/Directory",
+  "description": "Directory/portal style with tool grid and dark mode",
+  "domains": [
+    {
+      "domain": "automatedbiddinghub.com",
+      "siteName": "Automated Bidding Hub",
+      "tagline": "Curated PPC Tools Directory"
+    },
+    {
+      "domain": "ppctoolskit.com",
+      "siteName": "PPC Toolkit",
+      "tagline": "Your Complete PPC Resource"
+    },
+    {
+      "domain": "aimarketingtoolshub.com",
+      "siteName": "AI Marketing Tools Hub",
+      "tagline": "Discover AI-Powered Marketing Solutions"
+    }
+  ],
+  "customization": {
+    "primaryColor": "#0ea5e9",
+    "secondaryColor": "#3b82f6",
+    "style": "Directory/portal with dark mode, modern blues",
+    "features": {
+      "darkMode": true,
+      "categoryFilters": true,
+      "searchBar": true,
+      "gridLayout": true
+    }
+  }
+}
