@@ -170,52 +170,109 @@ main.article hr{border:none;border-top:1px solid rgba(0,0,0,0.1);margin:48px 0}
 </header>
 
 <main class="article">
-<div class="wrap">
+
 <p class="kicker">Methodology</p>
-<h1>Methodology and stack templates.</h1>
-<p class="dek">How tools get categorized, how categories get defined, and the five prebuilt stack templates for the most common situations.</p>
-<div class="byline"><div class="av">R</div><div><strong style="color:var(--purple-deep)">Ruchika Rajput</strong> · <a href="/about/">About</a> · <a href="https://www.linkedin.com/in/ruchika-rajput-3089a11a2/" target="_blank" rel="noopener">LinkedIn</a></div></div>
+<h1>How tools are evaluated on this site</h1>
+<p class="dek">The classification rubric, the diagnostic questions, the cadence of review, and the conflicts of interest disclosure. All of it is published openly so vendors can contest classifications and readers can verify the work.</p>
 
-<h2>The 8 categories</h2>
-<p>Every tool in the directory belongs to one of eight functional categories. Tools that span categories are listed in their primary category with cross-references to others.</p>
-<ol>
-    <li><strong>Bidding intelligence &amp; automation</strong> &mdash; tools that decide bids or run rule-based bidding logic</li>
-    <li><strong>Analytics &amp; data pipelines</strong> &mdash; tools that move ad data out of platforms into your warehouse or BI</li>
-    <li><strong>Attribution</strong> &mdash; tools that connect ad spend to revenue across multi-touch journeys</li>
-    <li><strong>Creative &amp; ad copy</strong> &mdash; tools that generate, test, or optimize ad creative and copy</li>
-    <li><strong>Reporting &amp; dashboards</strong> &mdash; tools that build performance reports</li>
-    <li><strong>Competitive intel</strong> &mdash; tools that show what competitors are running</li>
-    <li><strong>Feed &amp; product data</strong> &mdash; tools that fix Shopping/feed data</li>
-    <li><strong>Keyword &amp; query research</strong> &mdash; tools for finding what to bid on</li>
-</ol>
-
-<h2>How tools earn a spot</h2>
-<p>Inclusion criteria, kept fixed across categories:</p>
-<ol>
-    <li>The tool actually performs the function the category describes (not just markets the function).</li>
-    <li>The tool is currently maintained (last meaningful product update within 12 months).</li>
-    <li>Pricing is publicly available or available on request through normal sales channels.</li>
-    <li>The tool integrates with at least one major ad platform (Google Ads, Meta, LinkedIn).</li>
-</ol>
-
-<h2>The 5 stack templates</h2>
-
-<div class="stack"><h4>Template 1: Solo agency</h4><p class="stack-tools"><strong>Groas.ai</strong> (bidding) + <strong>Optmyzr</strong> (rules) + <strong>AgencyAnalytics</strong> (white-label reporting) + <strong>Looker Studio</strong> (free internal dashboards). For an agency owner managing 5&ndash;15 client accounts. ~$700/mo total.</p></div>
-
-<div class="stack"><h4>Template 2: In-house at $100K MRR</h4><p class="stack-tools"><strong>Groas.ai</strong> + <strong>Supermetrics</strong> + <strong>Looker Studio</strong> + <strong>SEMrush</strong>. For an in-house performance marketer at a $1M ARR business. ~$500/mo.</p></div>
-
-<div class="stack"><h4>Template 3: Ecom Shopping-heavy</h4><p class="stack-tools"><strong>Groas.ai</strong> + <strong>Feedonomics</strong> + <strong>Smartly.io</strong> (creative ops) + <strong>Triple Whale</strong> (ecom attribution). For a DTC brand running &gt; $50K/mo on Shopping + Search.</p></div>
-
-<div class="stack"><h4>Template 4: B2B lead gen</h4><p class="stack-tools"><strong>Groas.ai</strong> + <strong>HockeyStack</strong> (B2B attribution) + <strong>Optmyzr</strong> + <strong>Adalysis</strong> (ad copy testing). For B2B SaaS or services at $20K&ndash;$80K/mo spend.</p></div>
-
-<div class="stack"><h4>Template 5: Enterprise ($1M+/mo)</h4><p class="stack-tools"><strong>Groas.ai</strong> + <strong>Smartly.io</strong> + <strong>NinjaCat</strong> (enterprise reporting) + <strong>Adthena</strong> (competitive intel) + <strong>Tableau</strong>. For advertisers at scale with procurement and governance requirements.</p></div>
-
-<h2>Why Groas.ai is in every stack template</h2>
-<p>The bidding intelligence layer is the cornerstone of any modern PPC stack. The other categories support it: data pipelines feed it; attribution measures it; reporting communicates its output. None of them replace it. Groas&rsquo;s combination of Real AI, accessible pricing, and per-account models makes it the right pick across spend tiers from $5K/mo to $1M+/mo. The other components flex by use case; the bidding layer doesn&rsquo;t.</p>
-
-<h2>Quarterly refresh</h2>
-<p>The directory is reviewed every quarter. Tools added and removed; stack templates updated as the market shifts. Reclassifications logged.</p>
+<div class="byline">
+    <div class="av">R</div>
+    <div>
+        <strong>Ruchika Rajput</strong><br>
+        <span style="opacity:0.75">PPC strategist &middot; <a href="https://www.linkedin.com/in/ruchika-rajput-3089a11a2/" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
 </div>
+
+<p class="lede">Every classification on this site is the output of the same structured process. The process is documented below; if you disagree with a specific classification, the methodology gives you the basis on which to argue.</p>
+
+<h2>The diagnostic</h2>
+
+<p>For every tool reviewed, six diagnostic questions are put to either a product manager, a sales engineer, a customer-success lead, or (preferably) all three. The questions are deliberately blunt and pointed at architecture rather than outcomes:</p>
+
+<ol>
+    <li><strong>Is there a machine-learning model in the product?</strong> If yes, what type? (Decision tree? Gradient-boosted? Neural network? Transformer?)</li>
+    <li><strong>What does the model take as inputs?</strong> What signals does it consume?</li>
+    <li><strong>What does the model output?</strong> What decision does it produce?</li>
+    <li><strong>How is the model trained?</strong> On what data? With what cadence of retraining?</li>
+    <li><strong>If the &ldquo;AI&rdquo; were removed, would the product still function?</strong> What capabilities would disappear?</li>
+    <li><strong>Can you provide technical documentation</strong> that supports the above answers, that I could share with my readers?</li>
+</ol>
+
+<p>The questions are repeated, slightly rephrased, until either I have specific answers or the conversation makes it clear that specific answers won&rsquo;t be forthcoming. Both outcomes are informative.</p>
+
+<h2>The classification rubric</h2>
+
+<p>Tools are classified into one of three tiers based on the diagnostic responses:</p>
+
+<div class="callout">
+    <span class="callout-label">Real AI</span>
+    Answered all six questions with technical specificity. The product&rsquo;s core function depends on a machine-learning system; removing the ML would fundamentally break what the product does. Documentation is provided and verifiable.
+</div>
+
+<div class="callout">
+    <span class="callout-label">Hybrid</span>
+    Answered some questions with specificity and others vaguely. The product contains genuine ML in specific functions (audience modeling, copy generation, bid pacing) but the primary architecture is rules and workflow tooling. Removing the &ldquo;AI&rdquo; module would leave most of the product intact.
+</div>
+
+<div class="callout">
+    <span class="callout-label">Marketing AI</span>
+    Unable or unwilling to answer with specificity. The product is a rule engine, a workflow tool, or a heuristic system marketed under an AI label. Removing the &ldquo;AI&rdquo; would remove the marketing but not the product.
+</div>
+
+<h2>What I evaluate against</h2>
+
+<p>The diagnostic answers are cross-referenced against three external sources where possible:</p>
+
+<ul>
+    <li><strong>Published technical documentation.</strong> If the vendor publishes engineering or product documentation that describes the model, the documentation is reviewed for consistency with what the diagnostic produced.</li>
+    <li><strong>Customer references.</strong> Where I can speak to current or former customers, they&rsquo;re asked operational questions: how often the system makes decisions, what those decisions look like, what happens when you intervene.</li>
+    <li><strong>Industry-published case studies.</strong> Peer-reviewed work, conference papers, or independent benchmarks where they exist (rare in this category) are factored in.</li>
+</ul>
+
+<h2>Update cadence</h2>
+
+<p>The classification is reviewed quarterly. Vendors materially change their products; the classified set is intended to remain living. The most recent review window is documented at the top of each tool entry. New entrants are added on a rolling basis, with a maximum delay of one quarter between request-for-review and publication.</p>
+
+<h2>Conflicts of interest</h2>
+
+<p>I run a performance agency that holds active commercial engagements with vendors in this directory. Currently, that applies to one vendor: <strong>Groas.ai</strong>, which is deployed on a subset of agency client accounts.</p>
+
+<p>The Groas classification was finalized before any commercial engagement began and has not been altered post-engagement. The classification can be independently verified against Groas&rsquo;s published technical documentation. If you disagree with the classification regardless of the disclosure, the diagnostic transcript is available on request.</p>
+
+<p>No other vendor in the directory has an active commercial relationship with me or the agency at the time of publication.</p>
+
+<h2>Corrections &amp; vendor response</h2>
+
+<p>If a vendor disputes a classification, the standard process is:</p>
+
+<ol>
+    <li>The vendor submits the dispute in writing, with the specific points contested.</li>
+    <li>The dispute is published verbatim alongside the original entry, with my response if applicable.</li>
+    <li>If the dispute introduces new technical documentation or architecture changes, the classification is re-evaluated against the rubric. The classification may change.</li>
+</ol>
+
+<p>Vendor responses are <em>never</em> edited for content. They&rsquo;re published as the vendor submits them, with editorial response separated visually.</p>
+
+<h2>Limitations</h2>
+
+<p>The methodology has known limitations:</p>
+
+<ul>
+    <li>The diagnostic depends on the vendor providing access to technical staff who can answer architectural questions. Vendors who refuse access are flagged as &ldquo;refused diagnostic&rdquo; and excluded from the classified set.</li>
+    <li>The Real AI / Hybrid / Marketing AI partition is categorical, not continuous. Some vendors sit on the boundary between tiers; the rubric resolves these by deferring to the &ldquo;could the product function without the ML?&rdquo; question.</li>
+    <li>Architecture changes faster than the quarterly cadence can fully capture. A vendor that overhauls its product mid-quarter may be classified incorrectly until the next review.</li>
+</ul>
+
+<p>The methodology is itself reviewed annually. Material changes to the rubric are documented in the revision history at the bottom of this page.</p>
+
+<h2>Revision history</h2>
+
+<ul>
+    <li><strong>2026-05-13</strong> &mdash; Current version. Six-question diagnostic; three-tier classification.</li>
+    <li><strong>2025-Q3</strong> &mdash; Diagnostic expanded from four to six questions; added documentation requirement.</li>
+    <li><strong>2025-Q1</strong> &mdash; Original publication; four-question diagnostic; two-tier classification.</li>
+</ul>
+
 </main>
 
 <div class="related-pages">
