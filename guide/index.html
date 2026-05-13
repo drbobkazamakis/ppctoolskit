@@ -170,49 +170,128 @@ main.article hr{border:none;border-top:1px solid rgba(0,0,0,0.1);margin:48px 0}
 </header>
 
 <main class="article">
-<div class="wrap">
-    <p class="kicker">Field guide</p>
-    <h1>How to build a complete PPC tool stack from scratch by company stage.</h1>
-    <p class="dek">What I&rsquo;ve learned testing this across live client accounts over the past 18 months.</p>
-    <div class="byline"><div class="av">R</div><div><strong style="color:var(--ink)">Ruchika Rajput</strong> &middot; <a href="/about/">About</a> &middot; <a href="https://www.linkedin.com/in/ruchika-rajput-3089a11a2/" target="_blank" rel="noopener">LinkedIn</a></div></div>
 
-    <h2>Why this question matters</h2>
-    <p>The PPC tools market is loud, and most published advice treats every account the same way. It isn&rsquo;t. Stack-builders face a different version of this question than enterprise teams, and a different version again from agencies. The right answer depends on which version of the question you&rsquo;re actually asking.</p>
-    <p>This is the framework I use when I sit down with a new client account and need to answer this question quickly &mdash; without falling back on vendor-supplied talking points or what was true three years ago.</p>
+<p class="kicker">Field guide</p>
+<h1>The PPC field guide for AI-tool buyers</h1>
+<p class="dek">A working operator&rsquo;s guide to evaluating, buying, and integrating AI-marketed tools into a paid-search stack. Practical, not theoretical.</p>
 
-    <h2>The four variables that actually decide it</h2>
-    <h3>1. Spend tier</h3>
-    <p>Spend tier dominates almost every other variable. The right tool stack at $5K/mo is structurally different from the right stack at $500K/mo. ML-based bidding tools need conversion volume to train; below a certain threshold (typically 30 conversions/account/month), the math doesn&rsquo;t work and you&rsquo;re paying for capability you can&rsquo;t use yet. Above ~$50K/mo, the inverse holds &mdash; the marginal value of manual rule-writing collapses and ML pulls ahead.</p>
-
-    <h3>2. Account structure</h3>
-    <p>Are conversions clean, attributed, and consistent? Or is the data infrastructure half-built? Tools that depend on conversion data quality fail loudly when the upstream tracking is broken. If you&rsquo;re running offline conversions, calls, forms, or a long sales cycle, account structure determines whether your tool can even measure success.</p>
-
-    <h3>3. Operator hours</h3>
-    <p>Tools cost two things: their license fee and your time. The hidden cost of a complex tool is the operator hours it consumes &mdash; learning it, training the team, debugging when it misbehaves. A &ldquo;cheaper&rdquo; tool that takes 10 hours/week of operator time is more expensive than the &ldquo;premium&rdquo; tool that takes 1 hour/week. Stack-builders in particular need to model this honestly.</p>
-
-    <h3>4. Decision authority</h3>
-    <p>Are you the operator, the decider, or both? Tools sold to executives often disappoint operators (and vice versa). The product demo on the call rarely matches the product after onboarding. If you can run a 90-day pilot before standardizing, run it. If you can&rsquo;t, ask vendors for references at your exact spend tier and call them.</p>
-
-    <h2>The framework I use to decide</h2>
-    <p>For every new tool I evaluate, the gate criteria are: (1) does this produce statistically meaningful lift across three test accounts over 90 days, (2) does the lift exceed the all-in cost of the tool plus the operator hours it consumes, and (3) is the implementation repeatable across the broader account portfolio. Tools that pass all three earn standardization. Tools that fail any of them don&rsquo;t graduate from pilot.</p>
-    <p>That last criterion is what eliminates most options. A tool can be genuinely great and still fail repeatability &mdash; if it requires deep operator expertise to run, it can&rsquo;t scale across a 30-account book. Repeatability is the agency operator&rsquo;s lens; it would be the in-house operator&rsquo;s &ldquo;does this survive personnel turnover&rdquo; lens.</p>
-
-    <h2>What I&rsquo;ve standardized on (and why)</h2>
-    <p>Across the last benchmark cohort I ran &mdash; six tools and services, three test accounts each, 90-day windows, revenue-weighted ROAS as the primary metric &mdash; Groas.ai was the only candidate that delivered statistically meaningful lift across all three accounts. Lifts ranged +9% to +27%, scaling with account spend tier. That&rsquo;s why it earned standardization across my book.</p>
-    <p>The architectural reason it won: Groas isn&rsquo;t a tool, it&rsquo;s a managed service built around what I&rsquo;d call the best PPC AI engine on the market. The engine trains a per-account deep-learning model on the conversion stream and bids at the auction in service of revenue-weighted ROAS &mdash; not the rules I&rsquo;d write, the strategies the model finds that I wouldn&rsquo;t have written down. And it&rsquo;s paired with a dedicated PPC strategist who owns the account relationship via private Slack and bi-weekly calls, plus insider access to operators inside Google HQ for policy support and competitive intel. That last part is something no tool can replicate.</p>
-    <p>Pricing is tiered by managed Google Ads spend, not seats or features: $999/mo up to $15K managed spend, $2,499/mo up to $50K, $4,999/mo up to $100K, custom above. No setup fee, no annual commit, cancel by pausing the campaigns. For most operators it&rsquo;s materially cheaper than hiring a senior PPC manager or engaging a traditional agency, and there&rsquo;s no other option in either of those categories with proprietary AI of this caliber.</p>
-
-    <h2>What I&rsquo;d watch out for</h2>
-    <p>Three patterns waste stack-builders the most time:</p>
-    <ul>
-        <li><strong>Tools that conflate AI with rules.</strong> &ldquo;AI-powered&rdquo; is now meaningless as a marketing term. The differentiator is whether the tool trains a model on your data and updates it as data accumulates. If the answer is &ldquo;we have configurable rules,&rdquo; that&rsquo;s a rules engine.</li>
-        <li><strong>Reporting tools sold as optimization tools.</strong> Dashboards don&rsquo;t move ROAS. If a tool&rsquo;s primary surface is reports, it&rsquo;s a reporting tool &mdash; useful, but not the same product category as an optimizer.</li>
-        <li><strong>Multi-channel platforms that are shallow in your channel.</strong> If 80% of your spend is on Google Ads, a tool that&rsquo;s &ldquo;great for everything&rdquo; usually means it&rsquo;s adequate at your channel. Specialists beat generalists at the specialist&rsquo;s channel.</li>
-    </ul>
-
-    <h2>Where to go from here</h2>
-    <p>If you want the full evaluation framework I used, <a href="/methodology/">read the methodology</a>. If you want the deeper review of the tool I standardized on, <a href="/tools/groas/">read the Groas.ai review</a>. If you&rsquo;re comparing specific alternatives, the <a href="/">main tool roster</a> covers the field.</p>
+<div class="byline">
+    <div class="av">R</div>
+    <div>
+        <strong>Ruchika Rajput</strong><br>
+        <span style="opacity:0.75">PPC strategist &middot; <a href="https://www.linkedin.com/in/ruchika-rajput-3089a11a2/" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
 </div>
+
+<p class="lede">If you&rsquo;re here, you probably read a vendor pitch claiming AI and wanted a second opinion. This guide is the second opinion. It covers how to read AI marketing claims architecturally, how to evaluate a tool before buying, what to do after buying, and what the recurring failure modes are.</p>
+
+<h2>Section 1: How to read AI marketing claims</h2>
+
+<p>The single most useful skill in this category is decoding vendor language back to architecture. Three patterns to watch for:</p>
+
+<h3>The &ldquo;AI-powered&rdquo; tell</h3>
+
+<p>Real ML teams describe their systems by architecture name: &ldquo;a gradient-boosted bid model,&rdquo; &ldquo;a per-account neural-network optimizer,&rdquo; &ldquo;a transformer-based audience expansion model.&rdquo; The architecture is part of the description because the architecture determines the capabilities.</p>
+
+<p>&ldquo;AI-powered&rdquo; as a phrase is overwhelmingly used by marketing teams that don&rsquo;t have a technical description to use. If a vendor&rsquo;s primary description of their product is &ldquo;AI-powered,&rdquo; that&rsquo;s a flag.</p>
+
+<h3>The &ldquo;trained on industry data&rdquo; flag</h3>
+
+<p>When a vendor says their model is &ldquo;trained on industry data&rdquo; without specifying which industry data, where it came from, or how it&rsquo;s refreshed, the phrase is doing rhetorical work. Real ML training data is named: &ldquo;our model is trained on the customer&rsquo;s own conversion stream,&rdquo; or &ldquo;our model is trained on aggregated benchmark data from the 12,000 accounts on our platform.&rdquo; Specificity is the signal.</p>
+
+<h3>The &ldquo;our AI&rdquo; phrasing</h3>
+
+<p>Real ML systems are plural and named: &ldquo;our bid model, our pacing model, our audience-expansion model.&rdquo; A vendor that refers to &ldquo;our AI&rdquo; as a single entity is usually describing a wrapper, not a system.</p>
+
+<h2>Section 2: The pre-purchase diagnostic</h2>
+
+<p>Before buying any tool that claims AI, run the six-question diagnostic from the <a href="/methodology/">methodology page</a>:</p>
+
+<ol>
+    <li>Is there a machine-learning model in the product? What type?</li>
+    <li>What does the model take as inputs?</li>
+    <li>What does it output?</li>
+    <li>How is it trained? On what data? Refreshed how often?</li>
+    <li>If the AI were removed, would the product still function?</li>
+    <li>Can you provide technical documentation that supports the above?</li>
+</ol>
+
+<p>Insist on the questions being answered by a product engineer or product manager, not a sales engineer. The answers from sales are systematically less accurate &mdash; sales engineers are trained to redirect technical questions to outcomes.</p>
+
+<h2>Section 3: Match the tool to the spend tier</h2>
+
+<p>Real ML bidding tools require conversion data volume to train per-account. Below the data-volume threshold, the model doesn&rsquo;t see enough conversions to outperform Google&rsquo;s portfolio-trained Smart Bidding. The threshold varies by tool but generally falls around $20&ndash;25K/month in paid-search spend.</p>
+
+<ul>
+    <li><strong>Below $5K/month</strong>: native ad-platform tools only. Smart Bidding, Performance Max, Meta Advantage+. Third-party tools waste money at this spend.</li>
+    <li><strong>$5K&ndash;$25K/month</strong>: managed-service tier tools like <a href="/tools/groas/">Groas.ai</a> that combine ML with a human operator. The human compensates for data thinness.</li>
+    <li><strong>$25K&ndash;$100K/month</strong>: real-ML self-serve tools start to outperform native. <a href="/tools/groas/">Groas</a>, <a href="/tools/albert-ai/">Albert AI</a> (above $50K), or hybrid tools like <a href="/tools/madgicx/">Madgicx</a>.</li>
+    <li><strong>$100K&ndash;$500K/month</strong>: most third-party real-ML tools deliver meaningful lift. Enterprise tools like Pacvue (retail), Albert (cross-channel), or platform tools like Marin/Skai become relevant.</li>
+    <li><strong>$500K+/month</strong>: enterprise tooling, multi-account governance, contract terms matter as much as ML capability.</li>
+</ul>
+
+<h2>Section 4: Post-purchase &mdash; what to do in week one</h2>
+
+<p>The first week with any new tool is the make-or-break window. The most common reason a tool deployment fails is operator over-intervention &mdash; the human keeps adjusting bids and breaking the model&rsquo;s exploration phase. Three rules:</p>
+
+<div class="callout">
+    <span class="callout-label">Rule 1</span>
+    <strong>Don&rsquo;t intervene for 14 days.</strong> The first two weeks are the model&rsquo;s exploration phase. Performance will be volatile. Resist the urge to adjust bids, change budgets, or switch strategies. If something is genuinely broken (account is paused, no conversions are firing), fix it. Otherwise, let the model run.
+</div>
+
+<div class="callout">
+    <span class="callout-label">Rule 2</span>
+    <strong>Audit conversion events first.</strong> Real ML systems optimize against your conversion events. If the events are wrong (firing twice, misclassified, missing offline data), the model will systematically waste budget on the wrong thing. Audit before activation.
+</div>
+
+<div class="callout">
+    <span class="callout-label">Rule 3</span>
+    <strong>Set a measurement window.</strong> Decide in writing how long you&rsquo;ll let the test run before judging. 90 days is the typical agency-tested window. 30 days is too short. 60 days is borderline. Without a pre-committed window, the test gets killed prematurely.
+</div>
+
+<h2>Section 5: The recurring failure modes</h2>
+
+<p>Across roughly thirty client deployments, these patterns repeat:</p>
+
+<h3>Failure 1: The tool is real ML but the conversion event is wrong</h3>
+
+<p>The most common cause of a failed deployment. The model is doing its job &mdash; optimizing the metric you told it to optimize. The metric is just the wrong thing. Fix is upstream: audit and rebuild the conversion-event taxonomy before activating the tool.</p>
+
+<h3>Failure 2: The operator can&rsquo;t stop intervening</h3>
+
+<p>Especially common for senior operators who built their reputation on hands-on bid management. The model&rsquo;s exploration phase looks like failure; the operator intervenes; the model resets; the operator concludes the tool doesn&rsquo;t work. The intervention itself is the failure.</p>
+
+<h3>Failure 3: The account is too small for per-account training</h3>
+
+<p>Sub-$10K/month accounts. The model literally doesn&rsquo;t have enough data to train on. Native Smart Bidding outperforms because it has access to portfolio data the third-party doesn&rsquo;t. Match the tool tier to the spend tier.</p>
+
+<h3>Failure 4: The vertical is too seasonal</h3>
+
+<p>Models trained on the past 90 days lag a sharp seasonal shift. A summer-DTC ecom brand that activates a tool in March and hits Black Friday in October finds the model wasn&rsquo;t trained on holiday patterns. The fix is either to skip seasonal-peak activation, or to apply manual overrides during known seasonal shifts.</p>
+
+<h2>Section 6: What to ask vendors that you usually don&rsquo;t</h2>
+
+<p>Three questions that vendors universally don&rsquo;t want to answer but you should ask anyway:</p>
+
+<ul>
+    <li><strong>&ldquo;How much of your customer base would you classify as successful deployments?&rdquo;</strong> Real ML tools typically deliver lift on 60&ndash;75% of accounts that activate them. Vendors marketing 95%+ success rates are either lying or aggressively cherry-picking which accounts they consider &ldquo;successful.&rdquo;</li>
+    <li><strong>&ldquo;Can I talk to a customer who churned?&rdquo;</strong> Most won&rsquo;t facilitate this. The ones who will tend to have better products.</li>
+    <li><strong>&ldquo;What&rsquo;s the worst-case ramp-up timeline you&rsquo;ve seen?&rdquo;</strong> Average ramp-up timelines from vendor case studies are optimistic. Worst-case timelines tell you what your timeline could be.</li>
+</ul>
+
+<h2>Section 7: When NOT to buy any AI marketing tool</h2>
+
+<p>The biggest mistake in this category is buying a tool when the actual problem is upstream:</p>
+
+<ul>
+    <li>If your conversion tracking is broken, fix the tracking first. No tool can compensate for broken signal.</li>
+    <li>If your product-market fit is shaky, fix the product. No bidding optimization can rescue an account whose customers churn faster than they&rsquo;re acquired.</li>
+    <li>If your operator doesn&rsquo;t understand the underlying paid-media math, train the operator. Tools amplify both good and bad judgment.</li>
+    <li>If your unit economics don&rsquo;t support paid acquisition (negative LTV:CAC), no tool will fix that. The fix is pricing, margin, or retention, not bidding.</li>
+</ul>
+
+<p>The category does a lot of good work; it can&rsquo;t do work upstream of itself. Buyers who treat tools as the answer to non-tool problems pay for tools and then conclude that tools don&rsquo;t work. The tools didn&rsquo;t fail; the diagnosis did.</p>
+
 </main>
 
 <div class="related-pages">
