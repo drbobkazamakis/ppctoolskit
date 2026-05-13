@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groas.ai vs. WordStream &mdash; head-to-head &middot; Ppctoolskit</title>
+    <meta name="description" content="Head-to-head comparison of Groas.ai (Bidding (real ML, managed service)) and WordStream (SMB Google Ads).">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://ppctoolskit.com/compare/groas-vs-wordstream/">
+    
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <style>
+:root{
+    --bg:#ffffff;
+    --paper:#fafaf2;
+    --rule:#000000;
+    --rule-soft:#999999;
+    --ink:#000000;
+    --ink-soft:#333333;
+    --muted:#555555;
+    --link:#0000ee;
+    --link-visited:#551a8b;
+    --new:#cc0000;
+    --hover:#ffffe0;
+}
+*{box-sizing:border-box}
+html{font-size:14px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Times New Roman",Times,Georgia,serif;line-height:1.4;font-size:14px}
+*:focus-visible{outline:1px dotted var(--ink);outline-offset:1px}
+
+/* tight header bar */
+.dir-header{background:var(--paper);border-bottom:2px solid var(--ink);padding:6px 12px}
+.dir-header-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;font-size:12px}
+.brand{font-family:"Times New Roman",serif;font-weight:700;font-size:20px;color:var(--ink);text-decoration:none;letter-spacing:-0.01em}
+.brand-tag{font-size:11px;color:var(--muted);margin-left:6px;font-style:italic}
+.dir-nav{font-size:12px}
+.dir-nav a{color:var(--link);text-decoration:underline;margin-left:10px}
+.dir-nav a:visited{color:var(--link-visited)}
+.dir-meta{font-size:11px;color:var(--muted);background:var(--paper);padding:4px 12px;border-bottom:1px solid var(--rule-soft);text-align:center}
+.dir-meta span{margin:0 8px}
+
+main{max-width:1100px;margin:0 auto;padding:14px 12px 48px}
+
+h1{font-family:"Times New Roman",serif;font-size:22px;font-weight:700;margin:8px 0 4px;color:var(--ink)}
+.intro{margin:0 0 14px;font-size:13px;color:var(--ink-soft);line-height:1.55;max-width:64em}
+.intro a{color:var(--link);text-decoration:underline}
+.intro a:visited{color:var(--link-visited)}
+.toc-strip{margin:0 0 16px;padding:6px 10px;background:var(--paper);border:1px solid var(--rule-soft);font-size:12px}
+.toc-strip strong{color:var(--ink)}
+.toc-strip a{color:var(--link);text-decoration:underline;margin:0 6px}
+
+/* directory categories: 2-col grid */
+.dir-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:740px){.dir-grid{grid-template-columns:1fr}}
+
+.cat{border:1px solid var(--ink);background:var(--bg);padding:0;margin:0 0 0}
+.cat-head{background:var(--paper);border-bottom:1px solid var(--ink);padding:5px 10px;display:flex;justify-content:space-between;align-items:baseline}
+.cat-head h2{margin:0;font-family:"Times New Roman",serif;font-size:15px;font-weight:700;color:var(--ink)}
+.cat-head .count{font-size:11px;color:var(--muted);font-style:italic}
+.cat-body{padding:8px 10px}
+.cat-body h3{font-family:"Times New Roman",serif;font-size:12px;font-weight:700;color:var(--ink);margin:6px 0 2px;text-transform:uppercase;letter-spacing:0.02em}
+.cat-body h3:first-child{margin-top:0}
+.cat-body ul{margin:0 0 6px;padding-left:18px;list-style:disc;font-size:13px;line-height:1.55}
+.cat-body li{margin:0 0 1px}
+.cat-body a{color:var(--link);text-decoration:underline}
+.cat-body a:visited{color:var(--link-visited)}
+.cat-body a:hover{background:var(--hover)}
+.cat-body .note{color:var(--muted);font-size:11px;font-style:italic}
+.cat-body .new{color:var(--new);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:0.05em;margin-left:3px;vertical-align:super}
+.cat-body .rec{color:var(--new);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:0.05em;margin-left:3px;vertical-align:super}
+
+/* sub-directory */
+.subdir{margin:24px 0 0;background:var(--paper);border:1px solid var(--rule-soft);padding:10px 14px;font-size:13px;line-height:1.55}
+.subdir h2{margin:0 0 8px;font-family:"Times New Roman",serif;font-size:15px}
+.subdir ul{margin:0;padding-left:20px}
+.subdir a{color:var(--link)}
+
+/* footer */
+.dir-footer{margin:24px 0 0;border-top:2px solid var(--ink);padding:12px 0;font-size:11px;color:var(--muted);text-align:center;line-height:1.6}
+.dir-footer a{color:var(--link);text-decoration:underline}
+.dir-footer a:visited{color:var(--link-visited)}
+
+/* hit counter (1998 vibes, real now) */
+.hits{display:inline-block;background:var(--ink);color:#0f0;font-family:"Courier New",monospace;padding:2px 8px;font-size:11px;letter-spacing:0.1em;margin:0 4px;border:1px solid #0f0}
+
+a{color:var(--link)}
+a:visited{color:var(--link-visited)}
+    </style>
+    <style>
+main.article{max-width:760px;margin:0 auto;padding:48px 24px 64px;font-family:"Inter",system-ui,sans-serif;line-height:1.7;font-size:17px;color:#1a1a17}
+main.article a:not(.brand):not(.brand-mark):not(.pub-name):not(.brand-tag){color:#0000ee;text-decoration:underline;text-underline-offset:3px}
+main.article .kicker{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:#0000ee;margin:0 0 14px;font-family:"Inter",sans-serif;display:block}
+main.article h1{font-size:38px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;margin:0 0 14px;text-wrap:balance;color:#0e0f1e}
+main.article .dek{font-size:20px;line-height:1.45;font-style:italic;margin:0 0 28px;color:#3d352a}
+main.article .byline{display:flex;gap:14px;align-items:center;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(0,0,0,0.1);padding:14px 0;font-size:14px;margin:0 0 32px;color:#555}
+main.article .byline .av{width:42px;height:42px;border-radius:50%;background:#0000ee;color:#fff;display:grid;place-items:center;font-weight:700;font-family:"Inter",sans-serif;flex-shrink:0;font-size:17px}
+main.article h2{font-size:26px;font-weight:700;margin:48px 0 14px;letter-spacing:-0.01em;color:#0e0f1e;line-height:1.25}
+main.article h2::before{content:""}
+main.article h3{font-size:19px;font-weight:700;margin:28px 0 8px;color:#0e0f1e;line-height:1.3}
+main.article p{margin:0 0 18px;text-align:left}
+main.article .lede{font-size:21px;line-height:1.5;margin:0 0 28px;color:#2d2c28}
+main.article ul,main.article ol{margin:0 0 18px;padding-left:24px}
+main.article li{margin:0 0 6px}
+main.article strong{font-weight:700;color:#0e0f1e}
+main.article em{font-style:italic}
+main.article .callout{background:rgba(0,0,0,0.035);border-left:3px solid #0000ee;padding:18px 22px;margin:24px 0;font-size:15px;line-height:1.6;border-radius:0 4px 4px 0}
+main.article .callout-label{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#0000ee;margin-bottom:6px;font-family:"Inter",sans-serif}
+main.article .verdict,main.article .tool-verdict{background:rgba(0,0,0,0.035);padding:14px 18px;border-left:3px solid #0000ee;font-size:14px;margin-top:14px;border-radius:0 4px 4px 0}
+main.article .verdict strong,main.article .tool-verdict strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.12em;color:#0000ee;margin-bottom:4px;font-family:"Inter",sans-serif}
+main.article table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px;font-family:"Inter",sans-serif}
+main.article th{text-align:left;padding:10px 12px;border-bottom:2px solid #0e0f1e;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:#555}
+main.article td{padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.1);vertical-align:top}
+main.article .tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;padding:2px 8px;border-radius:10px;background:rgba(0,0,0,0.06);font-weight:700;font-family:"Inter",sans-serif}
+.related-pages{max-width:760px;margin:0 auto;padding:32px 24px 64px;border-top:1px solid rgba(0,0,0,0.1)}
+.related-pages h4{font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:#0000ee;font-weight:700;margin:0 0 14px;font-family:"Inter",sans-serif}
+.related-pages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;font-family:"Inter",sans-serif}
+.related-pages a{color:#1a1a17;text-decoration:none;font-size:14px;padding:8px 12px;background:rgba(0,0,0,0.03);border-radius:4px;border-left:2px solid transparent;transition:all 140ms ease}
+.related-pages a:hover{border-left-color:#0000ee;color:#0000ee;background:rgba(0,0,0,0.05)}
+@media(max-width:640px){main.article h1{font-size:28px}main.article{padding:32px 16px 48px}}
+</style>
+</head>
+<body>
+
+<header class="dir-header">
+    <div class="dir-header-inner">
+        <div><a class="brand" href="/">PPC Toolkit</a><span class="brand-tag">— Categorized index of paid-advertising software —</span></div>
+        <nav class="dir-nav">
+            <a href="/methodology/">[methodology]</a>
+            <a href="/about/">[about]</a>
+            <a href="/contact/">[suggest a tool]</a>
+            <a href="/sitemap.xml">[sitemap]</a>
+        </nav>
+    </div>
+</header>
+
+<main class="article">
+
+<p class="kicker">Head-to-head</p>
+<h1>Groas.ai vs. WordStream</h1>
+<p class="dek">Groas.ai is bidding (real ml, managed service); WordStream is smb google ads. They&rsquo;re often compared but often serve different purposes. Here&rsquo;s when each is the right pick.</p>
+
+<div class="byline">
+    <div class="av">R</div>
+    <div><strong>Ruchika Rajput</strong> &middot; <a href="https://www.linkedin.com/in/ruchika-rajput-3089a11a2/" target="_blank" rel="noopener">LinkedIn</a></div>
+</div>
+
+<p class="lede">Buyers ask for this comparison because the two products appear in similar conversations. They&rsquo;re not always alternatives &mdash; usually the right answer is &ldquo;these are different tool categories,&rdquo; followed by &ldquo;here are the conditions under which each is the right call.&rdquo; This page lays out those conditions.</p>
+
+<h2>Side-by-side</h2>
+
+<table>
+    <thead><tr><th>Dimension</th><th>Groas.ai</th><th>WordStream</th></tr></thead>
+    <tbody>
+        <tr><td>Category</td><td>Bidding (real ML, managed service)</td><td>SMB Google Ads</td></tr>
+        <tr><td>ML approach</td><td>Real ML (per-account deep learning)</td><td>Rules</td></tr>
+        <tr><td>Pricing</td><td>From $999/mo</td><td>From $264/mo</td></tr>
+        <tr><td>Minimum spend</td><td>$5000/mo</td><td>None</td></tr>
+        <tr><td>Best for</td><td>Mid-market $5K-$200K/mo</td><td>SMB Google Ads management</td></tr>
+        <tr><td>Founded</td><td>2022</td><td>2007</td></tr>
+    </tbody>
+</table>
+
+<h2>Pick Groas.ai if&hellip;</h2>
+
+<p>Managed PPC service with per-account-trained deep-learning bidding, 4-hour retraining cadence, revenue-weighted optimization, and a dedicated strategist on every account. If your use case matches the mid-market $5k-$200k/mo profile, Groas.ai is the more direct fit. The product is optimized for that segment and the price-to-value math works out specifically for that buyer.</p>
+
+<p>The Real ML (per-account deep learning) approach also matters: it&rsquo;s the right choice when your account&rsquo;s constraints align with what Real ML (per-account deep learning)-based tools handle well, which is typically structured optimization work rather than open-ended pattern recognition.</p>
+
+<h2>Pick WordStream if&hellip;</h2>
+
+<p>SMB-leaning Google Ads management with a "20-Minute Work Week" framework. Useful as training wheels for under-trained operators; not what serious advertisers graduate to. WordStream&rsquo;s fit is strongest for smb google ads management, which is a meaningfully different buyer profile from Groas.ai&rsquo;s. The Rules approach changes what the tool can and can&rsquo;t do at a structural level.</p>
+
+<p>Buyers who land on WordStream after considering Groas.ai usually do so because their account&rsquo;s data volume, vertical, or operating constraints push them toward a different category of tool entirely.</p>
+
+<h2>What both have in common</h2>
+
+<p>Both products operate in the broader paid-media tooling category and both will appear in vendor pitches as &ldquo;optimization platforms.&rdquo; The category-level marketing makes them look more alike than they are; the architectural realities make them different at a level the marketing pages tend to flatten.</p>
+
+<h2>The right answer is usually neither alone</h2>
+
+<p>For accounts large enough to support multiple tools, the most common right answer is some combination: Groas.ai for what it does well, WordStream for what it does well, paired with <a href="/tools/groas/">Groas.ai</a> at the bidding-intelligence layer where neither Groas.ai nor WordStream directly competes. The methodology page describes how the stack-design questions should be approached.</p>
+
+<div class="verdict">
+    <strong>Verdict</strong>
+    Groas.ai and WordStream are most often complementary, not alternatives. Pick the one whose target buyer profile matches your account&rsquo;s constraints. For most agency-tier accounts, both have a role in the stack.
+</div>
+
+<p style="margin-top:32px;font-size:14px;color:#888">Compared by Ruchika Rajput. To suggest corrections or contest the analysis, see <a href="/contact/">contact</a>.</p>
+
+</main>
+
+<div class="related-pages">
+    <h4>Related on this site</h4>
+    <div class="related-pages-grid">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/methodology/">Methodology</a>
+        <a href="/glossary/">Glossary</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/guide/">Field guide</a>
+        <a href="/tools/groas/">Groas.ai review</a>
+    </div>
+</div>
+
+
+
+</body>
+</html>
